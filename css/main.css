@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #f5ee84;
+  --accent-color1: #fbf8cc;
+  --accent-color2: #03045e;
+  --accent-color3: #474306;
+}
+
+body {
+  padding: 34px 97px;
+  margin: 0;
+  font-family: "Poppins";
+  background-color: var(--accent-color1);
+  color: var(--accent-color2);
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-color2);
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: bolder;
+  color: var(--primary-color);
+  margin-bottom: 0;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 134px;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav .primary-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .primary-nav .primary-item {
+  padding-right: 61px;
+}
+
+nav .primary-nav .primary-item:last-child {
+  padding-right: 0px;
+}
+
+nav .secondary-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .secondary-nav .secondary-item {
+  padding-right: 29px;
+}
+
+nav .secondary-nav .secondary-item:last-child {
+  padding-right: 0px;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 271px;
+}
+
+.hero .profile-data-col p {
+  font-size: 28px;
+}
+
+.hero .profile-data-col h1 {
+  color: var(--accent-color2);
+  margin-top: -2px;
+  margin-bottom: -2px;
+  width: 50%;
+  line-height: 100px;
+  font-size: 100px;
+}
+
+.hero .profile-data-col .resume {
+  position: relative;
+  height: 61px;
+  width: 158px;
+}
+
+.hero .profile-data-col .resume a {
+  color: var(--accent-color3);
+  position: absolute;
+  border: 2px solid var(--accent-color3);
+  padding: 21px 37px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.hero .profile-data-col .resume .btn-background {
+  position: absolute;
+  background-color: #f5ee84;
+  height: 76px;
+  width: 158px;
+  border-radius: 5px;
+  top: 10px;
+  left: 10px;
+}
+
+.hero .profile-image-col:before {
+  content: "";
+  position: absolute;
+  width: 104px;
+  height: 30px;
+  background-image: url("../img/Group 6-2.svg");
+  left: 63%;
+  bottom: 33%;
+}
+
+.hero .profile-image-col:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 56px;
+  background-image: url("../img/Group 10.svg");
+  right: 8%;
+  top: 23%;
+}
+
+.about {
+  margin-bottom: 183px;
+}
+
+.about .description {
+  width: 50%;
+  text-align: left;
+  font-size: 24px;
+}
+
+.about .experience {
+  margin-top: 145px;
+  padding-left: 15%;
+  font-size: 24px;
+}
+
+.about .experience .dot {
+  width: 29px;
+  height: 13px;
+  border-radius: 13px;
+  background-color: var(--accent-color2);
+  margin-right: 18px;
+  margin-top: 10px;
+}
+
+.about .experience .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.about .experience .container .experience-year {
+  font-weight: 600;
+}
+
+.work {
+  margin-bottom: 183px;
+}
+
+.work .description {
+  width: 50%;
+  text-align: left;
+  font-size: 24px;
+}
+
+.work .case-study {
+  margin-top: 124px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+}
+
+.work .case-study .date {
+  font-size: 15px;
+  font-style: italic;
+  margin-top: -8px;
+}
+
+.work .case-study .first-case {
+  margin-right: 60px;
+}
+
+.work .case-study .second-case {
+  margin-left: 60px;
+}
+
+.work .case-study .img-container {
+  position: relative;
+  min-height: 500px;
+}
+
+.work .case-study .img-container img {
+  position: absolute;
+  width: 100%;
+  height: 490px;
+}
+
+.work .case-study .img-container .overlay {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 490px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: var(--accent-color3);
+}
+
+.work .case-study .img-container .overlay b {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.work .case-study .img-container:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact img {
+  width: 440px;
+  height: 314px;
+}
+
+.contact .contact-desc {
+  width: 60%;
+  margin-left: 59px;
+  font-size: 24px;
+  margin-top: -30px;
+}
+
+.contact .contact-desc ul {
+  margin-top: 40px;
+  padding-left: 0;
+}
+
+.contact .contact-desc ul li {
+  margin-bottom: 12px;
+}
+/*# sourceMappingURL=main.css.map */
